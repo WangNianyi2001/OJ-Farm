@@ -1,0 +1,17 @@
+usage: make p=<project> [i=<input>] [<command>]
+
+<project>
+	The relative subdirectory to the desired project.
+	This must be specified.
+
+<input>
+	The directory to the desired input, optional.
+
+<command>
+	clean	Clean the existing target executable of a project.
+	build	Build the source of a project into the target executable.
+			Source must be named as "main.c" or "main.cpp".
+	run		Run the target executable of a project, possibly with given input.
+
+	If no commands are given, make will execute in an order of clean/build/run
+	to perform a full, clean debug process.
