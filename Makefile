@@ -9,7 +9,7 @@ compiler=g++
 
 entry:
 ifeq ($(project), )
-	@cat README;
+	@cat man;
 else
 	@make -s input=$(input) project=$(project) clean build run;
 endif
